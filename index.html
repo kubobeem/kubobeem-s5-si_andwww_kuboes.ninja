@@ -1,380 +1,181 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>くぁー / kuboes</title>
-  <style>
-    :root {
-      --bg: #0c0c0c;
-      --text: #e0e0e0;
-      --muted: #888;
-      --accent: #3dffa8;
-      --border: #222;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-      line-height: 1.7;
-      font-size: 15px;
-      padding: 2rem 1.2rem;
-      max-width: 640px;
-      margin: 0 auto;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    header {
-      margin-bottom: 2.5rem;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 1.5rem;
-    }
-
-    h1 {
-      font-size: 1.6rem;
-      font-weight: 600;
-      letter-spacing: 0.02em;
-    }
-
-    .sub {
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-top: 0.3rem;
-    }
-
-    h2 {
-      font-size: 1.05rem;
-      font-weight: 600;
-      margin: 2rem 0 0.8rem;
-      color: var(--accent);
-      letter-spacing: 0.03em;
-    }
-
-    p, li {
-      margin-bottom: 0.6rem;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-      margin-bottom: 1rem;
-    }
-
-    .status {
-      display: flex;
-      gap: 1.5rem;
-      margin: 1.2rem 0;
-      font-size: 0.9rem;
-      color: var(--muted);
-      flex-wrap: wrap;
-    }
-
-    .status span {
-      color: var(--text);
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 0.8rem 0 1.2rem;
-      font-size: 0.9rem;
-    }
-
-    th, td {
-      text-align: left;
-      padding: 0.4rem 0.6rem;
-      border-bottom: 1px solid var(--border);
-    }
-
-    th {
-      color: var(--muted);
-      font-weight: 500;
-      width: 35%;
-    }
-
-    .card {
-      border: 1px solid var(--border);
-      padding: 1rem;
-      margin-bottom: 1rem;
-      border-radius: 4px;
-    }
-
-    .card h3 {
-      font-size: 0.95rem;
-      margin-bottom: 0.4rem;
-    }
-
-    .site-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.8rem;
-      margin: 1rem 0 1.5rem;
-    }
-
-    .site-btn {
-      display: inline-block;
-      padding: 0.85rem 1.4rem;
-      border: 1px solid var(--accent);
-      border-radius: 6px;
-      color: var(--accent);
-      font-size: 1rem;
-      font-weight: 500;
-      transition: background 0.15s, color 0.15s;
-    }
-
-    .site-btn:hover {
-      background: var(--accent);
-      color: #0c0c0c;
-      text-decoration: none;
-    }
-
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.8rem 1.2rem;
-      margin: 0.8rem 0 1.2rem;
-    }
-
-    footer {
-      margin-top: 3rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid var(--border);
-      font-size: 0.8rem;
-      color: var(--muted);
-      text-align: center;
-    }
-
-    .muted {
-      color: var(--muted);
-    }
-
-    code {
-      font-size: 0.8rem;
-      word-break: break-all;
-    }
-
-    @media (max-width: 480px) {
-      body {
-        padding: 1.5rem 1rem;
-        font-size: 14px;
-      }
-      .status {
-        flex-direction: column;
-        gap: 0.4rem;
-      }
-      .site-btn {
-        flex: 1 1 100%;
-        text-align: center;
-      }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>くぁー 公式ホームページ / kubobeem.tech</title>
+<meta name="description" content="サブ垢「くぁー」の個人ページ。プロフィール、運用方針、FAQ、読み物。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="くぁー 公式ホームページ">
+<meta property="og:description" content="サブ垢「くぁー」の個人ページ。プロフィール、運用方針、FAQ、読み物。">
+<meta property="og:url" content="https://kubobeem.f5.si/">
+<meta property="og:image" content="https://kuboes.ninja/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="くぁー 公式ホームページ">
+<meta name="twitter:description" content="サブ垢「くぁー」の個人ページ。プロフィール、運用方針、FAQ、読み物。">
+<meta name="twitter:image" content="https://kuboes.ninja/og.png">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>くぁー</h1>
-  <div class="sub">サブ垢の個人ページ · kuboes</div>
+<header id="top">
+<h1>くぁー</h1>
+<p class="subtitle">サブ垢のホームページ</p>
+<p class="version">Version 3.2 / 2026-11-06</p>
 </header>
 
-<section>
-  <p>このページは <strong>@qa_a_aa</strong> 系列アカウントの運営者である「くぁー」の個人ページです。</p>
-  <p>本アカウント群はサブアカウントとして運用しています。本垢の有無や詳細は公開していません。</p>
-  <p>個人開発・TUI・分散チャット・ローカルLLMあたりをよく触る。</p>
+<nav>
+<a href="index.html" aria-current="page"><strong>トップ</strong></a>
+<a href="about.html">詳しい情報</a>
+<a href="policy.html">運用</a>
+<a href="tech.html">技術</a>
+<a href="notes.html">考察</a>
+<a href="appendix.html">補足</a>
+<a href="links.html">相互リンク</a>
+</nav>
 
-  <div class="status">
-    <div>運用中アカウント <span>6+</span></div>
-    <div>公式肩書き <span>0</span></div>
-    <div>タイムゾーン <span>JST</span></div>
-  </div>
+<section id="profile">
+<h2><span class="section-num">1</span>要点</h2>
+
+<p>このホームページは、<strong>@qa_a_aa</strong> と <strong>@Qaa_a_a_a</strong> の運営者「くぁー」の個人ページです。どちらもサブ垢で、本垢の有無や詳細は公開していません。</p>
+
+<div class="card">
+<strong>基本データ</strong><br>
+ハンドル: くぁー<br>
+主な活動場所: X（旧Twitter）<br>
+アカウント種別: サブアカウント<br>
+言語: 日本語<br>
+タイムゾーン: Asia/Tokyo (JST)
+</div>
+
+<div class="grid">
+<div class="grid-item"><strong>2</strong>運用中アカウント</div>
+<div class="grid-item"><strong>0</strong>公式肩書き</div>
+<div class="grid-item"><strong>—</strong>本垢公開状況</div>
+<div class="grid-item"><strong>JST</strong>活動時間帯</div>
+</div>
+
+<p>HTML と CSS だけで、JavaScript・画像・外部フォントは使っていません。更新頻度も返信の義務もありません。</p>
 </section>
 
-<section>
-  <h2>関連サイト</h2>
-  <div class="site-buttons">
-    <a href="https://kubobeem.me" class="site-btn">kubobeem.me</a>
-    <a href="https://kubobeem.tech" class="site-btn">kubobeem.tech</a>
-  </div>
-  <div class="links">
-    <a href="https://kubobeem.f5.si">kubobeem.f5.si</a>
-    <a href="https://kuboes.ninja">kuboes.ninja</a>
-  </div>
+<section id="accounts">
+<h2><span class="section-num">2</span>アカウント</h2>
+
+<div class="two-col">
+<div class="card">
+<strong>@qa_a_aa</strong><br>
+表示名: くぁー　サブ垢<br>
+用途: 日常的なポスト・反応<br>
+状態: 稼働中<br>
+<a href="https://x.com/qa_a_aa" class="btn">プロフィールを開く</a>
+</div>
+<div class="card">
+<strong>@Qaa_a_a_a</strong><br>
+表示名: くぁー サブ垢 🙈🙉🙊<br>
+用途: 予備・気分転換用<br>
+Discord: kuuuuuuuuuuaaaaaaa<br>
+<a href="https://x.com/Qaa_a_a_a" class="btn">プロフィールを開く</a>
+</div>
+</div>
+
+<div class="card card-note">
+<ul>
+<li>どちらもサブ垢で、公式な発言や約束を行う場ではありません。</li>
+<li>DM は開放している場合がありますが、既読・返信の保証はありません。</li>
+<li>このページに書かれた内容以外を公式情報と見なさないでください。</li>
+</ul>
+</div>
 </section>
 
-<section>
-  <h2>アカウント</h2>
+<section id="contact">
+<h2><span class="section-num">3</span>連絡</h2>
 
-  <div class="card">
-    <h3>@qa_a_aa</h3>
-    <table>
-      <tr><th>表示名</th><td>くぁー サブ垢</td></tr>
-      <tr><th>種別</th><td>サブアカウント</td></tr>
-      <tr><th>状態</th><td>稼働中</td></tr>
-    </table>
-    <a href="https://x.com/qa_a_aa">プロフィールを開く →</a>
-  </div>
-
-  <div class="card">
-    <h3>@qa_a_aa2</h3>
-    <table>
-      <tr><th>表示名</th><td>くぁー サブ垢</td></tr>
-      <tr><th>種別</th><td>サブアカウント</td></tr>
-      <tr><th>状態</th><td>稼働中</td></tr>
-    </table>
-    <a href="https://x.com/qa_a_aa2">プロフィールを開く →</a>
-  </div>
-
-  <div class="card">
-    <h3>@qa_a_aa3</h3>
-    <table>
-      <tr><th>表示名</th><td>くぁー サブ垢</td></tr>
-      <tr><th>種別</th><td>サブアカウント</td></tr>
-      <tr><th>状態</th><td>稼働中</td></tr>
-    </table>
-    <a href="https://x.com/qa_a_aa3">プロフィールを開く →</a>
-  </div>
-
-  <div class="card">
-    <h3>@qa_a_aa4</h3>
-    <table>
-      <tr><th>表示名</th><td>くぁー サブ垢</td></tr>
-      <tr><th>種別</th><td>サブアカウント</td></tr>
-      <tr><th>状態</th><td>稼働中</td></tr>
-    </table>
-    <a href="https://x.com/qa_a_aa4">プロフィールを開く →</a>
-  </div>
-
-  <div class="card">
-    <h3>@qa_a_aa5</h3>
-    <table>
-      <tr><th>表示名</th><td>くぁー サブ垢</td></tr>
-      <tr><th>種別</th><td>サブアカウント</td></tr>
-      <tr><th>状態</th><td>稼働中</td></tr>
-    </table>
-    <a href="https://x.com/qa_a_aa5">プロフィールを開く →</a>
-  </div>
-
-  <div class="card">
-    <h3>@qa_a_aa6</h3>
-    <table>
-      <tr><th>表示名</th><td>くぁー サブ垢</td></tr>
-      <tr><th>種別</th><td>サブアカウント</td></tr>
-      <tr><th>状態</th><td>凍結</td></tr>
-    </table>
-    <a href="https://x.com/qa_a_aa6">プロフィールを開く →</a>
-  </div>
-
-  <div class="card">
-    <h3>@qa____a</h3>
-    <table>
-      <tr><th>表示名</th><td>不明</td></tr>
-      <tr><th>種別</th><td>不明</td></tr>
-      <tr><th>状態</th><td>不明</td></tr>
-    </table>
-    <a href="https://x.com/qa____a">プロフィールを開く →</a>
-  </div>
+<p>専用のフォームやメールアドレスはありません。X の <strong>@qa_a_aa</strong> または <strong>@Qaa_a_a_a</strong> への DM へ。返信の保証はなく、緊急の用件には向きません。営業・勧誘・個人情報を含む連絡はご遠慮ください。</p>
 </section>
 
-<section>
-  <h2>理念</h2>
-  <ul>
-    <li>シンプルさを優先する</li>
-    <li>透明性を保つ（限界はある）</li>
-    <li>義務を負わない</li>
-    <li>他者への配慮</li>
-    <li>技術的な選択を明示する</li>
-  </ul>
+<section id="toc">
+<h2><span class="section-num">4</span>目次（全ページ）</h2>
+
+<p>このサイトは 7 ページ構成です。このページが要点で、残りは下の 6 ページに分かれています。</p>
+
+<h3><a href="about.html">詳しい情報 — about.html</a></h3>
+<ul class="toc">
+<li><a href="about.html#philosophy">サイトと運用の理念</a></li>
+<li><a href="about.html#history">沿革・タイムライン</a></li>
+<li><a href="about.html#status">現在のステータス</a></li>
+<li><a href="about.html#features">このページの構成と機能</a></li>
+<li><a href="about.html#detail-profile">プロフィール補足</a></li>
+<li><a href="about.html#detail-history2">より詳細なタイムラインメモ</a></li>
+</ul>
+
+<h3><a href="policy.html">運用 — policy.html</a></h3>
+<ul class="toc">
+<li><a href="policy.html#rules">運用方針・ガイドライン</a></li>
+<li><a href="policy.html#detail-operation">運用上の細則</a></li>
+<li><a href="policy.html#faq">よくある質問（FAQ）</a></li>
+<li><a href="policy.html#detail-faq2">FAQ追加項目</a></li>
+<li><a href="policy.html#closing">おわりに</a></li>
+</ul>
+
+<h3><a href="tech.html">技術 — tech.html</a></h3>
+<ul class="toc">
+<li><a href="tech.html#technical">技術仕様</a></li>
+<li><a href="tech.html#detail-design">デザイン決定の記録</a></li>
+<li><a href="tech.html#appendix">付録</a></li>
+</ul>
+
+<h3><a href="notes.html">考察 — notes.html</a></h3>
+<ul class="toc">
+<li><a href="notes.html#extended-thoughts">サブ垢という選択について</a></li>
+<li><a href="notes.html#extended-web">ウェブページに対する考え方</a></li>
+<li><a href="notes.html#extended-privacy">プライバシーと公開範囲</a></li>
+<li><a href="notes.html#extended-future">この先について</a></li>
+<li><a href="notes.html#extended-reading">このページの読み方（提案）</a></li>
+<li><a href="notes.html#extended-comparison">他の「軽いホームページ」との比較メモ</a></li>
+<li><a href="notes.html#extended-meta">メタ情報：このページが書かれた経緯</a></li>
+<li><a href="notes.html#extended-closing2">再度のおわりに</a></li>
+<li><a href="notes.html#extended-principles">基本原則の再確認</a></li>
+<li><a href="notes.html#extended-daily">日常的な運用のイメージ</a></li>
+<li><a href="notes.html#extended-communication">コミュニケーションのスタイル</a></li>
+<li><a href="notes.html#extended-tools">使っているもの・使っていないもの</a></li>
+<li><a href="notes.html#extended-accessibility">アクセシビリティへの配慮</a></li>
+<li><a href="notes.html#extended-maintenance">メンテナンス方針</a></li>
+<li><a href="notes.html#extended-faq3">FAQ さらに追加</a></li>
+<li><a href="notes.html#extended-structure">文書構造の説明</a></li>
+<li><a href="notes.html#extended-final">最終確認事項</a></li>
+</ul>
+
+<h3><a href="appendix.html">補足 — appendix.html</a></h3>
+<ul class="toc">
+<li><a href="appendix.html#extended-more">追加の詳細と考察</a></li>
+<li><a href="appendix.html#extended-final-details">詳細補足と回顧</a></li>
+<li><a href="appendix.html#glossary-extended">用語集と補足説明</a></li>
+<li><a href="appendix.html#closing-extended">結びに代えて — 長文の先にあるもの</a></li>
+<li><a href="appendix.html#appendix-b">付録B: チェックリスト</a></li>
+<li><a href="appendix.html#appendix-c">付録C: 変更が必要になったときの手順（自分用）</a></li>
+<li><a href="appendix.html#appendix-d">付録D: このページが向いている人・向いていない人</a></li>
+<li><a href="appendix.html#very-end">本当の最後に</a></li>
+<li><a href="appendix.html#postscript">追記・補遺</a></li>
+<li><a href="appendix.html#colophon">奥付に相当する情報</a></li>
+<li><a href="appendix.html#afterword">あとがき</a></li>
+<li><a href="appendix.html#end-note">終了宣言</a></li>
+</ul>
+
+<h3><a href="links.html">相互リンク — links.html</a></h3>
+<p>サイト名・URL・説明文の貼り付け用素材と、相互リンクの方針。</p>
 </section>
 
-<section>
-  <h2>技術</h2>
-  <p class="muted">軽量・依存ほぼゼロを意識しています。</p>
-  <p>HTML + CSS のみ · システムフォント · 外部依存なし</p>
-</section>
-
-<section>
-  <h2>GitHub</h2>
-
-  <div class="card">
-    <h3>kubobeem</h3>
-    <table>
-      <tr><th>役割</th><td>メイン</td></tr>
-    </table>
-    <a href="https://github.com/kubobeem">開く →</a>
-  </div>
-
-  <div class="card">
-    <h3>kubobeem2</h3>
-    <table>
-      <tr><th>役割</th><td>AI</td></tr>
-    </table>
-    <a href="https://github.com/kubobeem2">開く →</a>
-  </div>
-</section>
-
-<section>
-  <h2>Hugging Face</h2>
-
-  <div class="card">
-    <h3>kubobeem</h3>
-    <a href="https://huggingface.co/kubobeem">開く →</a>
-  </div>
-</section>
-
-<section>
-  <h2>FAQ</h2>
-  <p><strong>本垢は？</strong><br>公開していません。</p>
-  <p><strong>なぜサブ垢を複数？</strong><br>なんとなくです。</p>
-  <p><strong>連絡方法は？</strong><br>XのDMを試してください（返信保証なし）。</p>
-</section>
-
-<section>
-  <h2>連絡</h2>
-  <p>XのDMへ。返信保証はありません。</p>
-  <div class="links">
-    <a href="https://mond.how/qa_a_aa2">Mond</a>
-    <a href="https://smp11.simplex.im/a#WwuQIlTf_T4Cpzh3sHNFY00VuAzZKMMy-DINXXAkZrw">SimpleX</a>
-    <span>Session</span>
-  </div>
-  <p class="muted">Session ID</p>
-  <p><code>0534682eed6c52c73ce25120b3d8122c04aa4f9e34eb906926241f988379404d4b</code></p>
-</section>
-
-<section>
-  <h2>好き / 嫌い</h2>
-  <p><strong>好き:</strong> OSS / 無料 / NoLog / 分散型 / 自分で動かせる / オープンライセンス</p>
-  <p><strong>嫌い:</strong> 有料 / Closedなコード / 企業 / 大量ログ / サブスク強制 / 執着 / 粘着 / ほぼ不可能への挑戦</p>
-</section>
-
-<section>
-  <h2>その他</h2>
-
-  <div class="card">
-    <h3>@nukonukomain</h3>
-    <table>
-      <tr><th>関係</th><td>友達</td></tr>
-    </table>
-    <a href="https://x.com/nukonukomain">プロフィールを開く →</a>
-  </div>
-</section>
+<div class="pager">
+<a href="about.html"><strong>詳しい情報 →</strong><span>理念・沿革・ステータス</span></a>
+</div>
 
 <footer>
-  このページはほぼ何もしていない<br>
-  kubobeem.s5.si · kuboes.ninja
+<p><strong>くぁー ホームページ</strong></p>
+<p>HTML + CSS only / No JavaScript / No Images / No External Fonts</p>
+<p>© 2026 くぁー — サブ垢の個人ページ</p>
+<p class="meta">この内容は予告なく変更されることがあります。</p>
 </footer>
-
 </body>
 </html>
