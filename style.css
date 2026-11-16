@@ -392,3 +392,44 @@ img{
   body > *:nth-child(10) { animation-delay: 630ms; }
   body > *:nth-child(n+11) { animation-delay: 700ms; }
 }
+
+/* ダークモード */
+@view-transition{navigation:auto}
+@media (prefers-color-scheme: dark){
+  body{background:#14161a;color:#e6e6e6}
+  nav{background:#1e2126;border-color:#333}
+  nav a{color:#9ecbff}
+  nav a:hover{background:#2a2f36;color:#fff}
+  nav a[aria-current="page"]{background:#243447}
+  section{background:#1e2126;border-color:#333}
+  h2{color:#9ecbff}
+  h3{color:#dbe4ee}
+  h4{color:#c8d2de}
+  a{color:#8ab4ff}
+  a:hover{color:#bcd6ff}
+  .meta{color:#9aa3af}
+  .card{background:#23262c}
+  .card-warn{background:#2c1f1f}
+  .card-info{background:#1d2b22}
+  .card-note{background:#2b2517}
+  .grid-item{background:#23262c;border-color:#333}
+  .grid-item strong{color:#8ab4ff}
+  footer{color:#8b95a5;border-top-color:#333}
+  .progress{background:#2a2f36}
+  th,td{border-color:#333}
+  th{background:#26292f;color:#dbe4ee}
+  tr:nth-child(even){background:#23262c}
+  blockquote{background:#23262c;color:#b9c0c9}
+  hr{border-top-color:#333}
+  code{background:#26292f}
+  .timeline-item::before{border-color:#1e2126}
+  .btn-outline{color:#8ab4ff !important}
+  .btn-outline:hover{background:#243447}
+  .def-list dt{color:#9ecbff}
+  .def-list dd{color:#b9c0c9}
+  .highlight{background:#4a3f10;color:#ffe9a8}
+  .pager a{background:#1e2126;border-color:#333}
+  .pager a:hover{border-color:#3a7bd5;background:#23262c}
+  .pager strong{color:#9ecbff}
+  .pager span{color:#9aa3af}
+}
