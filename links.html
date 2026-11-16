@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="相互リンク / くぁー">
 <meta name="twitter:description" content="相互リンクしているサイト。">
 <meta name="twitter:image" content="https://kuboes.ninja/og.png">
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="style.css?v=4">
 <style>
 .partner-list{list-style:none;margin:0;padding:0}
 .partner-list li{margin-bottom:1rem}
@@ -45,6 +45,12 @@
   color:#4a5568;
   margin-top:.35rem;
 }
+
+@media (prefers-color-scheme: dark){
+  .partner-list a{background:#1d2733;border-color:#3a7bd5;color:#9ecbff}
+  .partner-list a:hover{background:#243447;border-color:#5b9bd5}
+  .partner-list a span{color:#9aa3af}
+}
 </style>
 </head>
 <body>
@@ -56,12 +62,7 @@
 
 <nav>
 <a href="index.html">トップ</a>
-<a href="about.html">詳しい情報</a>
-<a href="policy.html">運用</a>
-<a href="tech.html">技術</a>
-<a href="notes.html">考察</a>
-<a href="appendix.html">補足</a>
-<a href="links.html" aria-current="page"><strong>相互リンク</strong></a>
+<a href="links.html" aria-current="page" style="background:linear-gradient(135deg,#2c5aa0,#3a7bd5);color:#fff;font-weight:700"><strong>相互リンク</strong></a>
 <a href="https://kubobeem.tech/">ブログ</a>
 </nav>
 
