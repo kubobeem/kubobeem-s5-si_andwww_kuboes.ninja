@@ -1,48 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
 <channel>
-  <title>くぁー 公式ホームページ</title>
+  <title>くぁー</title>
   <link>https://kubobeem.f5.si/</link>
-  <description>くぁーの個人ページ。プロフィール、運用方針、読み物。</description>
+  <description>サブ垢「くぁー」の個人ページ。</description>
   <language>ja</language>
   <image>
     <url>https://kuboes.ninja/og.png</url>
-    <title>くぁー 公式ホームページ</title>
+    <title>くぁー</title>
     <link>https://kubobeem.f5.si/</link>
   </image>
   <item>
-    <title>くぁー 公式ホームページ</title>
+    <title>くぁー</title>
     <link>https://kubobeem.f5.si/</link>
     <guid isPermaLink="false">https://kubobeem.f5.si/#top</guid>
-    <pubDate>Mon, 16 Nov 2026 01:07:00 +0900</pubDate>
-    <description><![CDATA[<p><img src="https://kuboes.ninja/og.png" alt=""></p><p>くぁーの個人ページ。プロフィール、運用方針、読み物。</p>]]></description>
-  </item>
-  <item>
-    <title>詳しい情報</title>
-    <link>https://kubobeem.f5.si/about.html</link>
-    <guid isPermaLink="false">https://kubobeem.f5.si/about.html</guid>
-    <pubDate>Mon, 16 Nov 2026 01:07:00 +0900</pubDate>
-    <description><![CDATA[<p><img src="https://kuboes.ninja/og.png" alt=""></p><p>くぁーの詳しいプロフィール。</p>]]></description>
-  </item>
-  <item>
-    <title>技術</title>
-    <link>https://kubobeem.f5.si/tech.html</link>
-    <guid isPermaLink="false">https://kubobeem.f5.si/tech.html</guid>
-    <pubDate>Mon, 16 Nov 2026 01:07:00 +0900</pubDate>
-    <description><![CDATA[<p><img src="https://kuboes.ninja/og.png" alt=""></p><p>くぁーの技術まわり。</p>]]></description>
-  </item>
-  <item>
-    <title>考察</title>
-    <link>https://kubobeem.f5.si/notes.html</link>
-    <guid isPermaLink="false">https://kubobeem.f5.si/notes.html</guid>
-    <pubDate>Mon, 16 Nov 2026 01:07:00 +0900</pubDate>
-    <description><![CDATA[<p><img src="https://kuboes.ninja/og.png" alt=""></p><p>くぁーの考察・読み物。</p>]]></description>
+    <pubDate>Mon, 16 Nov 2026 22:00:00 +0900</pubDate>
+    <description><![CDATA[<p><img src="https://kuboes.ninja/og.png" alt=""></p><p>サブ垢「くぁー」の個人ページ。</p>]]></description>
   </item>
   <item>
     <title>相互リンク</title>
     <link>https://kubobeem.f5.si/links.html</link>
     <guid isPermaLink="false">https://kubobeem.f5.si/links.html</guid>
-    <pubDate>Mon, 16 Nov 2026 01:07:00 +0900</pubDate>
+    <pubDate>Mon, 16 Nov 2026 22:00:00 +0900</pubDate>
     <description><![CDATA[<p><img src="https://kuboes.ninja/og.png" alt=""></p><p>くぁーの相互リンク。</p>]]></description>
   </item>
 </channel>
