@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+  <title>くぁー 公式ホームページ</title>
+  <link>https://kubobeem.f5.si/</link>
+  <description>くぁーの個人ページ。プロフィール、運用方針、読み物。</description>
+  <language>ja</language>
+  <image>
+    <url>https://kuboes.ninja/og.png</url>
+    <title>くぁー 公式ホームページ</title>
+    <link>https://kubobeem.f5.si/</link>
+  </image>
+  <item>
+    <title>くぁー 公式ホームページ</title>
+    <link>https://kubobeem.f5.si/</link>
+    <guid isPermaLink="false">https://kubobeem.f5.si/#top</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 +0900</pubDate>
+    <description><![CDATA[<p><img src="https://kuboes.ninja/og.png" alt=""></p><p>くぁーの個人ページ。プロフィール、運用方針、読み物。</p>]]></description>
+    <media:content url="https://kuboes.ninja/og.png" type="image/png" medium="image" width="1200" height="630" />
+  </item>
+  <item>
+    <title>詳しい情報</title>
+    <link>https://kubobeem.f5.si/about.html</link>
+    <guid isPermaLink="false">https://kubobeem.f5.si/about.html</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 +0900</pubDate>
+    <description><![CDATA[<p><img src="https://kuboes.ninja/og.png" alt=""></p><p>くぁーの詳しいプロフィール。</p>]]></description>
+    <media:content url="https://kuboes.ninja/og.png" type="image/png" medium="image" width="1200" height="630" />
+  </item>
+  <item>
+    <title>運用</title>
+    <link>https://kubobeem.f5.si/policy.html</link>
+    <guid isPermaLink="false">https://kubobeem.f5.si/policy.html</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 +0900</pubDate>
+    <description><![CDATA[<p><img src="https://kuboes.ninja/og.png" alt=""></p><p>くぁーの運用方針。</p>]]></description>
+    <media:content url="https://kuboes.ninja/og.png" type="image/png" medium="image" width="1200" height="630" />
+  </item>
+  <item>
+    <title>技術</title>
+    <link>https://kubobeem.f5.si/tech.html</link>
+    <guid isPermaLink="false">https://kubobeem.f5.si/tech.html</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 +0900</pubDate>
+    <description><![CDATA[<p><img src="https://kuboes.ninja/og.png" alt=""></p><p>くぁーの技術まわり。</p>]]></description>
+    <media:content url="https://kuboes.ninja/og.png" type="image/png" medium="image" width="1200" height="630" />
+  </item>
+  <item>
+    <title>考察</title>
+    <link>https://kubobeem.f5.si/notes.html</link>
+    <guid isPermaLink="false">https://kubobeem.f5.si/notes.html</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 +0900</pubDate>
+    <description><![CDATA[<p><img src="https://kuboes.ninja/og.png" alt=""></p><p>くぁーの考察・読み物。</p>]]></description>
+    <media:content url="https://kuboes.ninja/og.png" type="image/png" medium="image" width="1200" height="630" />
+  </item>
+  <item>
+    <title>補足</title>
+    <link>https://kubobeem.f5.si/appendix.html</link>
+    <guid isPermaLink="false">https://kubobeem.f5.si/appendix.html</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 +0900</pubDate>
+    <description><![CDATA[<p><img src="https://kuboes.ninja/og.png" alt=""></p><p>くぁーの補足・あとがき。</p>]]></description>
+    <media:content url="https://kuboes.ninja/og.png" type="image/png" medium="image" width="1200" height="630" />
+  </item>
+  <item>
+    <title>相互リンク</title>
+    <link>https://kubobeem.f5.si/links.html</link>
+    <guid isPermaLink="false">https://kubobeem.f5.si/links.html</guid>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 +0900</pubDate>
+    <description><![CDATA[<p><img src="https://kuboes.ninja/og.png" alt=""></p><p>くぁーの相互リンク。</p>]]></description>
+    <media:content url="https://kuboes.ninja/og.png" type="image/png" medium="image" width="1200" height="630" />
+  </item>
+</channel>
+</rss>
