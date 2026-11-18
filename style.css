@@ -287,6 +287,9 @@ pre{
   gap:1.2rem;
   margin:1rem 0;
 }
+details{margin:1.1rem 0}
+details summary{cursor:pointer;color:#1a6fb5;font-weight:600}
+details summary:hover{color:#0d4a7a}
 @media (max-width:640px){
   body{padding:1rem}
   header h1{font-size:1.9rem}
@@ -432,4 +435,5 @@ img{
   .pager a:hover{border-color:#3a7bd5;background:#23262c}
   .pager strong{color:#9ecbff}
   .pager span{color:#9aa3af}
+  details summary{color:#8ab4ff}
 }
